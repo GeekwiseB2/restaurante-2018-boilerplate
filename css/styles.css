@@ -1,0 +1,15 @@
+#home-section {
+    height:100vh;
+    background: url('../img/hero.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home-section h1, #home-section p {
+    color:#ffffff;
+    margin-bottom:20px;
+}
+
+@media only screen and (min-width : 992px) {
+}
