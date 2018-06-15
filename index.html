@@ -10,20 +10,20 @@
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body data-spy="scroll" data-target="navigation">
     <!-- body site code here -->
-    <section id="home-section">
+    <section id="home-section" class="home-section top-section">
         <div class="container text-center">
             <div class="row">
                 <div class="col-xs-12 col-md-6 col-md-offset-3">
-                    <h1>This is a branch called part 1</h1>
+                    <h1>The Table Is Open</h1>
                     <a href="#menu-section" class="btn btn-primary">View our menu</a> <a href="#reservation-section" class="btn btn-primary">Make a reservation</a>
                 </div>
             </div><!-- /.row -->
         </div><!-- /.container -->
     </section><!-- /#home-section -->
 
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default" data-spy="affix" data-offset-top="500" id="navigation">
         <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -33,23 +33,131 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">
-                    <h1 class="text-center">Chefs Table</h1>
-                    <div class="clearfix"></div>
-                </a>
+              <a class="navbar-brand" href="index.html">
+                <h1 class="navbar-brand">Chefs Table</h1>
+                <div class="clearfix"></div>
+              </a>
             </div> <!-- /.navbar-header -->
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#about-section">About</a></li>
-                    <li><a href="#menu-section">Explore the Menu</a></li>
-                    <li><a href="#reservation-section">Make a Reservation</a></li>
-                </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#home-section">About</a></li>
+                <li><a href="#about-section">Explore the Menu</a></li>
+                <li><a href="#menu-section">Make a Reservation</a></li>
+              </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
     </nav><!-- /.navbar -->
 
+		<section class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-md-push-1">
+					<h2>A Unique Culinary Experience</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptates, voluptatum mollitia. Libero, veritatis ducimus eos quaerat maxime, asperiores laborum quam temporibus, est ratione atque rem voluptatibus ullam dicta non sequi perferendis eaque consequuntur qui soluta, distinctio quisquam excepturi nisi fugiat culpa! Nulla pariatur, accusantium id at nihil cumque ut.</p>
+				</div>
+				<div class="col-xs-12 col-xs-push-1 col-sm-12 col-sm-push-2 col-md-4 col-md-push-1">
+					<img src="img/blueberries.jpg" alt="parfait" class="image-resize">
+				</div>
+			</div>
+		</section>
+
+		<section class="container">
+			<div class="row">
+				<div class="col-xs-12 col-xs-push-1 col-sm-12 col-md-10 col-md-push-1">
+					<h2>Explore Our Menu</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga maiores doloremque dignissimos, molestiae facilis cumque nisi, magnam, rerum voluptatem unde totam numquam velit qui voluptatum.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="menu-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-10 col-md-push-1">
+
+					  <ul class="nav nav-tabs" role="tablist">
+					    <li role="presentation" class="active"><a href="#appetizers" aria-controls="appetizers" role="tab" data-toggle="tab">Appetizers</a></li>
+					    <li role="presentation"><a href="#entrees" aria-controls="entrees" role="tab" data-toggle="tab">Entrees</a></li>
+					    <li role="presentation"><a href="#deserts" aria-controls="deserts" role="tab" data-toggle="tab">Deserts</a></li>
+					    <li role="presentation"><a href="#cocktails" aria-controls="cocktails" role="tab" data-toggle="tab">Cocktails</a></li>
+					  </ul>
+						<div class="tab-content">
+					    <div role="tabpanel" class="tab-pane active" id="appetizers">
+								<ul>
+									<li class="bold">Spring Salad</li>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quas quod voluptas iure suscipit dolor, dignissimos pariatur! Facere ullam fuga sequi commodi, saepe excepturi nisi!</p>
+									<li class="bold">Truffle Fries</li>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quas quod voluptas iure suscipit dolor, dignissimos pariatur! Facere ullam fuga sequi commodi, saepe excepturi nisi!</p>
+									<li class="bold">Baked Brussel Sprouts</li>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quas quod voluptas iure suscipit dolor, dignissimos pariatur! Facere ullam fuga sequi commodi, saepe excepturi nisi!</p>
+									<li class="bold">Three Cheese Mac &amp; Cheese</li>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quas quod voluptas iure suscipit dolor, dignissimos pariatur! Facere ullam fuga sequi commodi, saepe excepturi nisi!</p>
+								</ul>
+					    </div>
+					    <div role="tabpanel" class="tab-pane" id="entrees">
+								<ul>
+									<li class="bold">Spaghetti &amp; Meatballs</li>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quas quod voluptas iure suscipit dolor, dignissimos pariatur! Facere ullam fuga sequi commodi, saepe excepturi nisi!</p>
+									<li class="bold">Grilled Alaskan Salmon</li>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quas quod voluptas iure suscipit dolor, dignissimos pariatur! Facere ullam fuga sequi commodi, saepe excepturi nisi!</p>
+									<li class="bold">Filet Mignon</li>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quas quod voluptas iure suscipit dolor, dignissimos pariatur! Facere ullam fuga sequi commodi, saepe excepturi nisi!</p>
+									<li class="bold">Margherita Pizza</li>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quas quod voluptas iure suscipit dolor, dignissimos pariatur! Facere ullam fuga sequi commodi, saepe excepturi nisi!</p>
+								</ul>
+					    </div>
+					    <div role="tabpanel" class="tab-pane" id="deserts">
+								<ul>
+									<li class="bold">Chocolate Lava Cake</li>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quas quod voluptas iure suscipit dolor, dignissimos pariatur! Facere ullam fuga sequi commodi, saepe excepturi nisi!</p>
+									<li class="bold">Strawberry Cheesecake</li>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quas quod voluptas iure suscipit dolor, dignissimos pariatur! Facere ullam fuga sequi commodi, saepe excepturi nisi!</p>
+									<li class="bold">Creme Brulee</li>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quas quod voluptas iure suscipit dolor, dignissimos pariatur! Facere ullam fuga sequi commodi, saepe excepturi nisi!</p>
+									<li class="bold">Fruit Tarte</li>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quas quod voluptas iure suscipit dolor, dignissimos pariatur! Facere ullam fuga sequi commodi, saepe excepturi nisi!</p>
+								</ul>
+					    </div>
+					    <div role="tabpanel" class="tab-pane" id="cocktails">
+								<ul>
+									<li class="bold">Lemon Drop</li>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quas quod voluptas iure suscipit dolor, dignissimos pariatur! Facere ullam fuga sequi commodi, saepe excepturi nisi!</p>
+									<li class="bold">Mai Tai</li>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quas quod voluptas iure suscipit dolor, dignissimos pariatur! Facere ullam fuga sequi commodi, saepe excepturi nisi!</p>
+									<li class="bold">Gin &amp; Tonic</li>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quas quod voluptas iure suscipit dolor, dignissimos pariatur! Facere ullam fuga sequi commodi, saepe excepturi nisi!</p>
+									<li class="bold">House Special</li>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quas quod voluptas iure suscipit dolor, dignissimos pariatur! Facere ullam fuga sequi commodi, saepe excepturi nisi!</p>
+								</ul>
+					    </div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+		<section class="container-fluid footer">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-md-push-2">
+					<h2>Make A Reservation</h2>
+					<ul>
+						<li class="bold">Chefs Table</li>
+						<li>123 Market Street, Suite 900</li>
+						<li>Fresno, CA 95432</li>
+						<li>P: (559) 456-7890</li>
+						<i class="fab fa-facebook-square"></i>
+						<i class="fab fa-twitter"></i>
+						<i class="fab fa-instagram"></i>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-md-pull-1">
+					<img src="img/footer.jpg" alt="" class=image-resize>
+				</div>
+			</div>
+		</section>
     <!-- link all the scripts here -->
     <script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
     <script src="js/bootstrap.min.js" charset="utf-8"></script>
