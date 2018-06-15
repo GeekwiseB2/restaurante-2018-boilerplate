@@ -1,15 +1,44 @@
-#home-section {
-    height:100vh;
+body {
+  position: relative;
+}
+
+.home-section {
+    height:70vh;
     background: url('../img/hero.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    display: flex;
+    align-items: center;
 }
 
-#home-section h1, #home-section p {
+.affix {
+  z-index: 999;
+  top: 0;
+  width: 100%;
+}
+
+.home-section h1, .home-section p {
     color:#ffffff;
     margin-bottom:20px;
 }
 
+.navbar-brand h1 {
+  font-size: 16px;
+  margin:0;
+}
+
 @media only screen and (min-width : 992px) {
+  .home-section {
+    min-height: 500px;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .home-section {
+    height: 100vh;
+  }
+}
+
+.footer {
+  background-color: #d3d3d3;
 }
