@@ -9,13 +9,14 @@ body {
 }
 
 .home-hero {
-    height:100vh;
+    height:50vh;
     background: url('../img/hero.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
+    background-attachment: fixed;
 }
 
 .home-hero h1, .home-hero p {
@@ -32,8 +33,28 @@ body {
   border-radius: 0;
 }
 
+.about img {
+}
+
+#menu {
+  padding-bottom: 15px;
+}
+
+footer {
+  background-color: #eeeeee;
+}
+
+
+
 @media only screen and (min-width : 992px) {
   .home-hero {
     min-height: 500px;
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  .home-hero {
+    min-height: 500px;
+    height: 100vh;
   }
 }
