@@ -6,24 +6,25 @@
 	<title>Chefs Table</title>
     <!-- link google fonts here -->
     <!-- link all the css here -->
+		<link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body data-spy="scroll" data-target="#nav">
     <!-- body site code here -->
-    <section id="home-section">
+    <section id="home-section" class="home-hero">
         <div class="container text-center">
             <div class="row">
                 <div class="col-xs-12 col-md-6 col-md-offset-3">
                     <h1>There is room for you at our table.</h1>
-                    <a href="#menu-section" class="btn btn-primary">View our menu</a> <a href="#reservation-section" class="btn btn-primary">Make a reservation</a>
+                    <a href="#menu" class="btn btn-primary">View our menu</a> <a href="#reservation" class="btn btn-primary">Make a reservation</a>
                 </div>
             </div><!-- /.row -->
         </div><!-- /.container -->
     </section><!-- /#home-section -->
 
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default" id="nav" data-spy="affix" data-offset-top="500">
         <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -42,13 +43,178 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#about-section">About</a></li>
-                    <li><a href="#menu-section">Explore the Menu</a></li>
-                    <li><a href="#reservation-section">Make a Reservation</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Explore the Menu</a></li>
+                    <li><a href="#reservation">Make a Reservation</a></li>
+										<li><a href="#">PART TWO</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
     </nav><!-- /.navbar -->
+
+		<section id="about">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h2>A unique culinary experience.</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ducimus placeat eveniet dignissimos esse doloremque? Quia numquam praesentium, veniam cum. Asperiores fugit impedit, expedita aspernatur aut itaque ipsa pariatur laudantium.</p>
+					</div>
+					<div class="col-md-6">
+						<img src="img/blueberries.jpg" class="img-responsive center-block" alt="Responsive image" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 body">
+						<h2>Explore our menu</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quos assumenda, voluptates suscipit corrupti natus sequi, cumque dolores debitis itaque laudantium veritatis aliquid nemo provident. Fugit fuga, consectetur quis voluptatibus!</p>
+						<div>
+  						<!-- Nav tabs -->
+  						<ul class="nav nav-tabs text-center" role="tablist">
+    						<li role="presentation" class="active"><a href="#appetizers" aria-controls="appetizers" role="tab" data-toggle="tab">Appetizers</a></li>
+    						<li role="presentation"><a href="#entrees" aria-controls="entrees" role="tab" data-toggle="tab">Entrees</a></li>
+    						<li role="presentation"><a href="#desserts" aria-controls="desserts" role="tab" data-toggle="tab">Desserts</a></li>
+    						<li role="presentation"><a href="#cocktails" aria-controls="cocktails" role="tab" data-toggle="tab">Cocktails</a></li>
+  						</ul>
+
+  <!-- Tab panes -->
+  						<div class="tab-content">
+    						<div role="tabpanel" class="tab-pane active" id="appetizers">
+    							<div class="row">
+    								<div class="col-sm-6">
+    									<ul>
+    										<li>
+    											<h4><u>Spring Salad</u></h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    										</li>
+    										<li>
+													<h4><u>Truffle Fries</u></h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    										</li>
+    										<li>
+													<h4><u>Baked Brussel Sprouts</u></h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    										</li>
+    										<li>
+													<h4><u>Three Cheese Mac & Cheese</u></h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    										</li>
+    									</ul>
+    								</div>
+										<div class="col-sm-6">
+											<img src="img/appetizers.jpg" class="img-responsive center-block" alt="Responsive image" alt="">
+										</div>
+    							</div>
+    						</div>
+
+    						<div role="tabpanel" class="tab-pane" id="entrees">
+									<div class="row">
+    								<div class="col-sm-6">
+    									<ul>
+    										<li>
+													<h4><u>Spaghetti & Meatballs</u></h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    										</li>
+    										<li>
+													<h4><u>Grilled Alaskan Salmon</u></h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    										</li>
+    										<li>
+													<h4><u>Filet Mignon</u></h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    										</li>
+    										<li>
+													<h4><u>Margherita Pizza</u></h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    										</li>
+    									</ul>
+    								</div>
+										<div class="col-sm-6">
+											<img src="img/entrees.jpg" class="img-responsive center-block" alt="Responsive image" alt="">
+										</div>
+    						</div>
+							</div>
+
+    						<div role="tabpanel" class="tab-pane" id="desserts">
+									<div class="row">
+    								<div class="col-sm-6">
+    									<ul>
+    										<li>
+													<h4><u>Chocolate Lava Cake</u></h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    										</li>
+    										<li>
+													<h4><u>Strawberry Shortcake</u></h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    										</li>
+    										<li>
+													<h4><u>Creme Brulee</u></h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    										</li>
+    										<li>
+													<h4><u>Fruit Tarte</u></h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    										</li>
+    									</ul>
+    								</div>
+										<div class="col-sm-6">
+											<img src="img/desserts.jpg" class="img-responsive center-block" alt="Responsive image" alt="">
+										</div>
+    						</div>
+							</div>
+
+    						<div role="tabpanel" class="tab-pane" id="cocktails">
+									<div class="row">
+    								<div class="col-sm-6">
+    									<ul>
+    										<li>
+													<h4><u>Lemon Drop</u></h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    										</li>
+    										<li>
+													<h4><u>Mai Tai</u></h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    										</li>
+    										<li>
+													<h4><u>Gin & Tonic</u></h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    										</li>
+    										<li>
+													<h4><u>House Special</u></h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    										</li>
+    									</ul>
+    								</div>
+										<div class="col-sm-6">
+											<img src="img/cocktails.jpg" class="img-responsive center-block" alt="Responsive image" alt="">
+										</div>
+  						</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer id="reservation">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Make a reservation</h2>
+					<p><strong>Chefs Table</strong><br>123 Market Street, Suite 990 <br>Fresno, CA 95432 <br><abbr title="Phone">P:></abbr>(559) 456-7890 <br> <i class="fab fa-facebook-square"></i> <i class="fab fa-twitter-square"></i> <i class="fab fa-instagram"></i></p>
+				</div>
+				<div class="col-md-6">
+						<img src="img/footer.jpg" class="img-responsive center-block" alt="Responsive image" alt="">
+				</div>
+			</div>
+		</div>
+	</footer>
+
 
     <!-- link all the scripts here -->
     <script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
