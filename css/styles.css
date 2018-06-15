@@ -1,15 +1,57 @@
-#home-section {
-    height:100vh;
+body {
+  position: relative;
+}
+
+.home-section{
+    height:60vh;
+    min-height: 500px;
     background: url('../img/hero.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#home-section h1, #home-section p {
+.home-section h1, .home-section p {
     color:#ffffff;
     margin-bottom:20px;
 }
 
+
+.affix {
+  z-index: 999;
+  top: 0;
+  width: 100%;
+}
+
 @media only screen and (min-width : 992px) {
+  #home-section {
+    min-height: 500px;
+  }
+}
+
+li {
+  list-style-type: circle;
+}
+
+.image-resize {
+  height: 40vh;
+}
+
+.tablist li {
+  font-size: 20px;
+}
+
+.footer {
+  background-color: #f4f4f4;
+}
+
+.footer li {
+  list-style-type: none;
+}
+
+.bold {
+  font-weight: bold;
 }
